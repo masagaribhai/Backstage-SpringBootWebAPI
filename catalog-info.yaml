@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Spring-Boot-API"
+  description: "This is the sample Spring Boot App"
+  tags: 
+    - java
+    - springboot
+    - api
+  links:
+    - url: https://github.com/masagaribhai/Backstage-SpringBootWebAPI
+      title: Github
+      icon: github
+  annotations:
+    grafana/tag-selector: "my-grafana-tag"
+    jira/project-key: "BJI"
+    backstage.io/techdocs-ref: dir:.
+    
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  providesApis:
+    - todo

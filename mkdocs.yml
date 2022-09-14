@@ -1,0 +1,5 @@
+site_name: '.Net Core Web API'
+nav:
+  - Home: index.md
+plugins:
+  - techdocs-core
